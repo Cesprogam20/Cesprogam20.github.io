@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Machine</title>
+    <link rel="stylesheet" href="proyecto1.css">
+    <script src="proyecto1.js"></script>
+    <script src="https://kit.fontawesome.com/d9bdc24350.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comme&family=Fira+Sans&family=Oswald:wght@500&family=Roboto+Condensed:wght@700&family=Roboto:wght@300&family=Ubuntu:wght@300&family=Vina+Sans&display=swap" rel="stylesheet">
+</head>
+<body id='body' class='transition' style="background-color: #2754b6;">
+    <wrapper class='p-4 activate' id="quote-box" style="background-color: aliceblue;">
+        <div class="animation" id="#Animation">
+            <div id="text" class="fw-bold fs-4 mb-3" style="color: #2754b6;"></div>
+            <div id="author" class="fw-bold fs-5 mb-2" style="color: #2754b6;"></div>
+        </div>
+        <div class="container-fluid d-flex align-items-center">
+            <button class='btn fw-bold fs-6 border mt-1' id="new-quote" style="color: #2754b6;" onclick="generate()">New-quote</button>
+            <div id="links" class="d-flex justify-content-end">
+                <a class="fs-4 d-flex justify-content-center align-items-center" id="tumblr-quote" title="Post this quote on tumblr!" target="_blank" href="https://www.tumblr.com/widgets/share/tool?posttype=quote&amp;tags=quotes,freecodecamp&amp;caption=Martin%20Luther%20King%20Jr.&amp;content=Our%20lives%20begin%20to%20end%20the%20day%20we%20become%20silent%20about%20things%20that%20matter.&amp;canonicalUrl=https%3A%2F%2Fwww.tumblr.com%2Fbuttons&amp;shareSource=tumblr_share_button">
+                    <i id="icon" class="fa fa-tumblr fs-4" style="color: #2754b6;"></i>
+                </a>
+                <a class='fs-4 d-flex justify-content-center align-items-center' href="https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=%22Winning%20isn%E2%80%99t%20everything%2C%20but%20wanting%20to%20win%20is.%22%20Vince%20Lombardi" id="tweet-quote" target="_blank">
+                    <i id='icon1' class="fa-brands fa-square-twitter fs-3 mt-1" style="color: #2754b6;"></i>
+                </a>
+            </div>
+        </div>
+    </wrapper>
+    <script src="//cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
